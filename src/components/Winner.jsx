@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Winner extends Component {
+export default class extends Component {
   render() {
     return (
       <div className="winner">
