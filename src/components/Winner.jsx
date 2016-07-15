@@ -3,7 +3,10 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 
 export default class extends Component {
-  mixins: [PureRenderMixin],
+  constructor(props) {
+    super(props)
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this)
+  }
   render() {
     return (
       <div className="winner">

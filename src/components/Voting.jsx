@@ -4,7 +4,10 @@ import Winner from './Winner'
 import Vote from './Vote'
 
 export default class extends Component {
-  mixins: [PureRenderMixin],
+  constructor(props) {
+    super(props)
+    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this)
+  }
   render() {
     return (
       <div>
