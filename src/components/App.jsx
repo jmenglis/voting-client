@@ -5,3 +5,4 @@ export default class extends Component {
     return this.props.children
   }
 }
+
