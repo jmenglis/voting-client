@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import Winner from './Winner'
 import Vote from './Vote'
 
-export default class Voting extends Component {
+export class Voting extends Component {
   constructor(props) {
     super(props)
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this)
@@ -27,4 +27,5 @@ var mapStateToProps = (state) => {
   }
 }
 
-connect(mapStateToProps)(Voting);
+
+export const VotingContainer = connect(mapStateToProps)(Voting);
