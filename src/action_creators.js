@@ -12,3 +12,10 @@ export var vote = (entry) => {
     entry
   }
 }
+
+export var next = () => {
+  return {
+    meta: {remote: true},
+    type: 'NEXT'
+  }
+}
