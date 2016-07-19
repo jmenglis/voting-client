@@ -105,7 +105,7 @@ describe('reducer', () => {
 
     expect(nextState).to.equal(fromJS({
       vote: {
-        pair: ['Sunshine', 'Slumdog Millionare']
+        pair: ['Sunshine', 'Slumdog Millionaire']
       }
     }))
   })
