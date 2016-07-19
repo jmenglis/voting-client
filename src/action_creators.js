@@ -7,6 +7,7 @@ export var setState = (state) => {
 
 export var vote = (entry) => {
   return {
+    meta: {remote: true},
     type: 'VOTE',
     entry
   }
